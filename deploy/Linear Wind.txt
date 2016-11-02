@@ -1,0 +1,10 @@
+LandisData   Extension
+
+Name         "Linear Wind"
+Version      "1.0 (official release)"
+Type         disturbance:wind
+Assembly     Landis.Extension.LinearWind
+Class        Landis.Extension.LinearWind.PlugIn
+Description  "Linear wind disturbance"
+UserGuide    "LANDIS-II Linear Wind v1.0 User Guide.pdf"
+CoreVersion  6.0
