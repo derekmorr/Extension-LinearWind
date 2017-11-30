@@ -1,7 +1,9 @@
+using Landis.Core;
+
 namespace Landis.Wind
 {
     internal static class Model
     {
-        internal static PlugIns.ICore Core;
+        internal static ICore Core;
     }
 }
