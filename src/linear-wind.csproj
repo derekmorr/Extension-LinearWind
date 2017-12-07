@@ -6,20 +6,18 @@
     <AssemblyCompany>USDA Forest Service Northern Research Station</AssemblyCompany>
     <AssemblyProduct>linear_wind.Properties</AssemblyProduct>
     <AssemblyVersion>1.0</AssemblyVersion>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Edu.Wisc.Forest.Flel.Util">
       <HintPath>..\lib\Edu.Wisc.Forest.Flel.Util.dll</HintPath>
     </Reference>
 
-    <!-- XXX: replace the project references with nuget -->
-    <ProjectReference Include="../../landis-core-model/model/core/src/Core.csproj" />
-    <ProjectReference Include="../../Library-Age-Cohort/src/age cohort.csproj" />
-    <ProjectReference Include="../../Library-Base-Cohort/src/base-cohort.csproj" />
-    <ProjectReference Include="../../Library-Metadata/src/Metadata.csproj" />
-    <ProjectReference Include="../../Library-Spatial/src/api/Landis_SpatialModeling.csproj" />
-
+    <PackageReference Include="Landis.Core" Version="1.0.0-CI00001" />
+    <PackageReference Include="Landis.Library.AgeOnlyCohorts" Version="1.0.0-CI00001" />
+    <PackageReference Include="Landis.Library.Cohorts" Version="1.0.0-CI00001" />
+    <PackageReference Include="Landis.Library.Metadata" Version="1.0.0-CI00002" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
     <PackageReference Include="Troschuetz.Random" Version="4.2.0" />
   </ItemGroup>
 </Project>
